@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Junaid — Video Editor & Visual Storyteller</title>
+<meta name="description" content="Junaid — Video Editor & Visual Storyteller. 4+ years of experience, 200+ long-form videos and professional experience with Arkintel.">
+<meta property="og:title" content="Junaid — Video Editor & Visual Storyteller">
+<meta property="og:description" content="4+ years editing · 200+ long-form videos · Arkintel">
+<style>
+:root{--bg:#070707;--surface:#101010;--text:#f4f4f0;--muted:#9b9b96;--line:#272727;--acid:#d9ff45;--max:1160px}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:Inter,Arial,sans-serif;line-height:1.55}
+a{color:inherit;text-decoration:none}
+.container{width:min(92%,var(--max));margin:auto}
+nav{position:fixed;z-index:20;top:0;left:0;right:0;height:70px;border-bottom:1px solid #ffffff12;background:#070707c7;backdrop-filter:blur(16px)}
+.nav{height:100%;display:flex;align-items:center;justify-content:space-between}
+.logo{font-weight:900;letter-spacing:-.06em;font-size:21px}.logo b{color:var(--acid)}
+.navlinks a{font-size:13px;color:#c7c7c2;margin-left:25px}.navlinks a:hover{color:var(--acid)}
+.hero{min-height:100vh;display:flex;align-items:center;padding:120px 0 80px;position:relative;overflow:hidden}
+.hero:after{content:"";position:absolute;width:520px;height:520px;right:-190px;top:80px;border-radius:50%;background:var(--acid);filter:blur(150px);opacity:.08}
+.eyebrow,.kicker{color:var(--acid);font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.2em}
+h1{font-size:clamp(54px,8.5vw,106px);line-height:.9;letter-spacing:-.075em;max-width:960px;margin-top:18px}
+h1 span{color:#898984}
+.hero-copy{max-width:650px;color:#b7b7b1;font-size:18px;margin:30px 0}
+.buttons{display:flex;gap:10px;flex-wrap:wrap}
+.btn{border:1px solid var(--line);border-radius:999px;padding:12px 19px;font-weight:800;font-size:13px}
+.btn.primary{background:var(--acid);color:#080808;border-color:var(--acid)}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);border:1px solid var(--line);margin-top:65px}
+.stat{padding:24px;border-right:1px solid var(--line)}.stat:last-child{border:0}
+.stat strong{display:block;font-size:31px;letter-spacing:-.05em}.stat small{color:var(--muted)}
+section{padding:110px 0}
+.head{display:flex;justify-content:space-between;gap:30px;align-items:end;margin-bottom:40px}
+h2{font-size:clamp(38px,5.5vw,65px);letter-spacing:-.065em;line-height:.95;margin-top:10px}
+.head p{max-width:430px;color:var(--muted)}
+.projects{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.project{background:var(--surface);border:1px solid var(--line);border-radius:20px;overflow:hidden}
+.preview{display:block;position:relative;aspect-ratio:16/9;background:#151515;overflow:hidden}
+.preview img{width:100%;height:100%;display:block;object-fit:cover;transition:transform .35s,filter .35s}
+.project:hover img{transform:scale(1.035);filter:brightness(.78)}
+.play{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:58px;height:58px;border-radius:50%;display:grid;place-items:center;background:var(--acid);color:#080808;font-size:20px;z-index:2;box-shadow:0 10px 40px #0008}
+.project-info{padding:23px}
+.project-no{font-size:11px;color:var(--acid);font-weight:900;letter-spacing:.15em}
+.project h3{font-size:25px;letter-spacing:-.045em;margin:7px 0}
+.project p{color:var(--muted);font-size:14px}
+.watch{display:inline-block;color:var(--acid);font-weight:800;font-size:13px;margin-top:17px}
+.about{display:grid;grid-template-columns:1.15fr .85fr;gap:80px}
+.about p{font-size:18px;color:#b8b8b2;margin-top:20px;max-width:720px}
+.quote{border-left:2px solid var(--acid);padding-left:25px;font-size:24px;line-height:1.35;align-self:center}
+.timeline{border-top:1px solid var(--line);margin-top:55px}
+.row{display:grid;grid-template-columns:170px 1fr;gap:35px;padding:28px 0;border-bottom:1px solid var(--line)}
+.row time{font-size:12px;color:var(--muted)}.row h3{font-size:24px;letter-spacing:-.04em}.row p{color:var(--muted);margin-top:5px}
+.skills{display:flex;flex-wrap:wrap;gap:9px;margin-top:28px}
+.skill{border:1px solid var(--line);padding:9px 13px;border-radius:999px;color:#ccc;font-size:12px}
+.contact{background:#101010;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.contact h2{max-width:760px}
+.contact-flex{display:flex;align-items:end;justify-content:space-between;gap:30px}
+footer{padding:28px 0;color:#6f6f6a;font-size:12px;display:flex;justify-content:space-between}
+@media(max-width:760px){
+.navlinks{display:none}.hero{padding-top:130px;min-height:auto}.stats,.projects{grid-template-columns:1fr}
+.stat{border-right:0;border-bottom:1px solid var(--line)}.stat:last-child{border-bottom:0}
+.head,.contact-flex{display:block}.head p{margin-top:18px}.about{grid-template-columns:1fr;gap:40px}
+.row{grid-template-columns:1fr;gap:8px}footer{display:block}footer span+span{display:block;margin-top:8px}
+}
+</style>
+</head>
+<body>
+<nav><div class="container nav"><a class="logo" href="#">JUNAID<b>.</b></a>
+<div class="navlinks"><a href="#work">Work</a><a href="#about">About</a><a href="#experience">Experience</a><a href="#contact">Contact</a></div></div></nav>
+
+<header class="hero"><div class="container">
+<div class="eyebrow">Video Editor · Visual Storyteller</div>
+<h1>Editing with a purpose.<br><span>Stories worth watching.</span></h1>
+<p class="hero-copy">I'm Junaid — a video editor with 4+ years of experience, focused on storytelling, pacing, visual communication and long-form content. I've worked on 200+ long-form videos with Arkintel, a U.S.-based company.</p>
+<div class="buttons"><a class="btn primary" href="#work">Explore my work ↓</a><a class="btn" href="https://www.youtube.com/@thearkintel" target="_blank" rel="noopener">Arkintel channel ↗</a></div>
+<div class="stats"><div class="stat"><strong>4+</strong><small>Years editing</small></div><div class="stat"><strong>200+</strong><small>Long-form videos</small></div><div class="stat"><strong>Arkintel</strong><small>U.S.-based company</small></div></div>
+</div></header>
+
+<section id="work"><div class="container">
+<div class="head"><div><div class="kicker">Selected work</div><h2>Different edits.<br>One editor.</h2></div>
+<p>Ten selected Arkintel projects. Each thumbnail opens the original YouTube video, avoiding unreliable embedded-player previews.</p></div>
+<div class="projects">
+<article class="project">
+  <a class="preview" href="https://youtu.be/by8pEMby7No" target="_blank" rel="noopener">
+    <img src="https://i.ytimg.com/vi/by8pEMby7No/hqdefault.jpg" alt="Project 01 YouTube thumbnail" loading="lazy">
+    <span class="play">▶</span>
+  </a>
+  <div class="project-info">
+    <div class="project-no">01</div>
+    <h3>Project 01</h3>
+    <p>Selected Arkintel editing work. Open the project to watch the original edit on YouTube.</p>
+    <a class="watch" href="https://youtu.be/by8pEMby7No" target="_blank" rel="noopener">Watch project ↗</a>
+  </div>
+</article>
+<article class="project">
+  <a class="preview" href="https://youtu.be/ol4KMPIE3To" target="_blank" rel="noopener">
+    <img src="https://i.ytimg.com/vi/ol4KMPIE3To/hqdefault.jpg" alt="Project 02 YouTube thumbnail" loading="lazy">
+    <span class="play">▶</span>
+  </a>
+  <div class="project-info">
+    <div class="project-no">02</div>
+    <h3>Project 02</h3>
+    <p>Selected Arkintel editing work. Open the project to watch the original edit on YouTube.</p>
+    <a class="watch" href="https://youtu.be/ol4KMPIE3To" target="_blank" rel="noopener">Watch project ↗</a>
+  </div>
+</article>
+<article class="project">
+  <a class="preview" href="https://youtu.be/e0ckLFPW4SE" target="_blank" rel="noopener">
+    <img src="https://i.ytimg.com/vi/e0ckLFPW4SE/hqdefault.jpg" alt="Project 03 YouTube thumbnail" loading="lazy">
+    <span class="play">▶</span>
+  </a>
+  <div class="project-info">
+    <div class="project-no">03</div>
+    <h3>Project 03</h3>
+    <p>Selected Arkintel editing work. Open the project to watch the original edit on YouTube.</p>
+    <a class="watch" href="https://youtu.be/e0ckLFPW4SE" target="_blank" rel="noopener">Watch project ↗</a>
+  </div>
+</article>
+<article class="project">
+  <a class="preview" href="https://youtu.be/75bCQRmr7SM" target="_blank" rel="noopener">
+    <img src="https://i.ytimg.com/vi/75bCQRmr7SM/hqdefault.jpg" alt="Project 04 YouTube thumbnail" loading="lazy">
+    <span class="play">▶</span>
+  </a>
+  <div class="project-info">
+    <div class="project-no">04</div>
+    <h3>Project 04</h3>
+    <p>Selected Arkintel editing work. Open the project to watch the original edit on YouTube.</p>
+    <a class="watch" href="https://youtu.be/75bCQRmr7SM" target="_blank" rel="noopener">Watch project ↗</a>
+  </div>
+</article>
+<article class="project">
+  <a class="preview" href="https://youtu.be/UCIsBOSInbI" target="_blank" rel="noopener">
+    <img src="https://i.ytimg.com/vi/UCIsBOSInbI/hqdefault.jpg" alt="Project 05 YouTube thumbnail" loading="lazy">
+    <span class="play">▶</span>
+  </a>
+  <div class="project-info">
+    <div class="project-no">05</div>
+    <h3>Project 05</h3>
+    <p>Selected Arkintel editing work. Open the project to watch the original edit on YouTube.</p>
+    <a class="watch" href="https://youtu.be/UCIsBOSInbI" target="_blank" rel="noopener">Watch project ↗</a>
+  </div>
+</article>
+<article class="project">
+  <a class="preview" href="https://youtu.be/sDyBIZtGXkk" target="_blank" rel="noopener">
+    <img src="https://i.ytimg.com/vi/sDyBIZtGXkk/hqdefault.jpg" alt="Project 06 YouTube thumbnail" loading="lazy">
+    <span class="play">▶</span>
+  </a>
+  <div class="project-info">
+    <div class="project-no">06</div>
+    <h3>Project 06</h3>
+    <p>Selected Arkintel editing work. Open the project to watch the original edit on YouTube.</p>
+    <a class="watch" href="https://youtu.be/sDyBIZtGXkk" target="_blank" rel="noopener">Watch project ↗</a>
+  </div>
+</article>
+<article class="project">
+  <a class="preview" href="https://youtu.be/wG-6Buutsio" target="_blank" rel="noopener">
+    <img src="https://i.ytimg.com/vi/wG-6Buutsio/hqdefault.jpg" alt="Project 07 YouTube thumbnail" loading="lazy">
+    <span class="play">▶</span>
+  </a>
+  <div class="project-info">
+    <div class="project-no">07</div>
+    <h3>Project 07</h3>
+    <p>Selected Arkintel editing work. Open the project to watch the original edit on YouTube.</p>
+    <a class="watch" href="https://youtu.be/wG-6Buutsio" target="_blank" rel="noopener">Watch project ↗</a>
+  </div>
+</article>
+<article class="project">
+  <a class="preview" href="https://youtu.be/k8OgHr5Jo74" target="_blank" rel="noopener">
+    <img src="https://i.ytimg.com/vi/k8OgHr5Jo74/hqdefault.jpg" alt="Project 08 YouTube thumbnail" loading="lazy">
+    <span class="play">▶</span>
+  </a>
+  <div class="project-info">
+    <div class="project-no">08</div>
+    <h3>Project 08</h3>
+    <p>Selected Arkintel editing work. Open the project to watch the original edit on YouTube.</p>
+    <a class="watch" href="https://youtu.be/k8OgHr5Jo74" target="_blank" rel="noopener">Watch project ↗</a>
+  </div>
+</article>
+<article class="project">
+  <a class="preview" href="https://youtu.be/ImeXMFcxN08" target="_blank" rel="noopener">
+    <img src="https://i.ytimg.com/vi/ImeXMFcxN08/hqdefault.jpg" alt="Project 09 YouTube thumbnail" loading="lazy">
+    <span class="play">▶</span>
+  </a>
+  <div class="project-info">
+    <div class="project-no">09</div>
+    <h3>Project 09</h3>
+    <p>Selected Arkintel editing work. Open the project to watch the original edit on YouTube.</p>
+    <a class="watch" href="https://youtu.be/ImeXMFcxN08" target="_blank" rel="noopener">Watch project ↗</a>
+  </div>
+</article>
+<article class="project">
+  <a class="preview" href="https://youtu.be/lY7W7_sDRJM" target="_blank" rel="noopener">
+    <img src="https://i.ytimg.com/vi/lY7W7_sDRJM/hqdefault.jpg" alt="Project 10 YouTube thumbnail" loading="lazy">
+    <span class="play">▶</span>
+  </a>
+  <div class="project-info">
+    <div class="project-no">10</div>
+    <h3>Project 10</h3>
+    <p>Selected Arkintel editing work. Open the project to watch the original edit on YouTube.</p>
+    <a class="watch" href="https://youtu.be/lY7W7_sDRJM" target="_blank" rel="noopener">Watch project ↗</a>
+  </div>
+</article></div>
+</div></section>
+
+<section id="about"><div class="container about">
+<div><div class="kicker">About me</div><h2>From graphic design to storytelling through video.</h2>
+<p>I'm Junaid, a 20-year-old Video Editor & Visual Storyteller with 4+ years of experience in editing and visual content.</p>
+<p>My passion for video editing and graphic design started when I was in 8th class. I began by making videos for my mother's YouTube channel, experimenting with visuals, cuts and simple edits. What started as something I enjoyed doing gradually became a serious creative interest.</p>
+<p>As I kept creating, I became more interested in how editing could shape a story. I started exploring pacing, transitions, sound design, motion graphics and different visual treatments. Over time, I learned that good editing isn't about adding the most effects; it's about knowing what the story needs, what the viewer needs to see, and when.</p>
+<p>My professional experience with Arkintel, a U.S.-based company, gave me the opportunity to apply that approach to long-form educational and information-driven content. Across 200+ videos, I've worked with different subjects and editing styles while keeping the focus on clarity and viewer engagement.</p>
+<div class="skills"><span class="skill">Video Editing</span><span class="skill">Storytelling</span><span class="skill">Long-form</span><span class="skill">After Effects</span><span class="skill">Motion Graphics</span><span class="skill">YouTube</span><span class="skill">Graphic Design</span><span class="skill">Thumbnails</span></div>
+</div>
+<div class="quote">“Good editing isn't about adding more. It's about making every cut serve the story.”</div>
+</div></section>
+
+<section id="experience"><div class="container">
+<div class="kicker">Experience</div><h2>Creative journey.</h2>
+<div class="timeline">
+<div class="row"><time>8TH CLASS</time><div><h3>Where it all started</h3><p>Started making videos for my mother's YouTube channel, which sparked my passion for video editing and graphic design.</p></div></div>
+<div class="row"><time>GROWING PASSION</time><div><h3>From experimenting to editing</h3><p>Kept learning and experimenting with graphic design, video editing, pacing, storytelling, sound and visual rhythm.</p></div></div>
+<div class="row"><time>ARKINTEL</time><div><h3>Video Editor</h3><p>Professional experience with a U.S.-based company, contributing to 200+ long-form videos across educational and information-led content.</p></div></div>
+<div class="row"><time>TODAY</time><div><h3>Video Editor & Visual Storyteller</h3><p>Combining editing, design and storytelling to make content clearer, more engaging and worth watching.</p></div></div>
+</div></div></section>
+
+<section class="contact" id="contact"><div class="container contact-flex">
+<div><div class="kicker">Let's work together</div><h2>Have footage? Let's turn it into something worth watching.</h2></div>
+<div class="buttons"><a class="btn primary" href="mailto:junaid.digitalcreator@gmail.com">Email me</a><a class="btn" href="https://www.youtube.com/@thearkintel" target="_blank" rel="noopener">View work ↗</a></div>
+</div></section>
+
+<footer class="container"><span>© 2026 Junaid.</span><span>junaid.digitalcreator@gmail.com</span></footer>
+</body></html>
